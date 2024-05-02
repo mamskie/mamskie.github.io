@@ -5,8 +5,22 @@ body {
 }
 
 body {
-  background-color: #80a6de;
-}
+    animation: gradientBackground 10s infinite alternate;
+  }
+  
+  @keyframes gradientBackground {
+    0% {
+      background: linear-gradient(45deg, #4c77c1, #4a69bb, #8e9eef); /* Start color gradient */
+    }
+    50% {
+      background: linear-gradient(45deg, #a97dfa, #7f85d4, #5171b8); /* Middle color gradient */
+    }
+    100% {
+      background: linear-gradient(45deg, #b48aff, #a380ff, #7579ff); /* End color gradient */
+    }
+    
+  }
+  
 
 /* Button */
 .menu-mobile {
@@ -32,11 +46,26 @@ body {
   border: 1px solid blue;
 }
 
+.bg-blue:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: blue;
+    box-shadow: 0 0 7px 0px white;
+    transition: 0.5s;
+}
+
 .bg-green {
   background-color: green;
   color: white;
   box-shadow: 0 0 7px 0px green;
   border: 1px solid green;
+  transition: 0.5s;
+  box-shadow: 0 0 7px 0px green;
+}
+
+.border-green:hover{
+    color: white;
+    border: 1px solid white;
 }
 
 .border-green {
@@ -50,7 +79,7 @@ body {
 }
 
 .text-gray {
-  color: #888888;
+  color: #ffffff;
 }
 
 .button {
@@ -114,6 +143,12 @@ section#box-profile {
   border-radius: 10px;
 }
 
+#box-profile .img-profile:hover {
+    transform: scale(1.05); 
+    transition: 0.5s;
+    box-shadow: 0 0 7px 0px rgba(255, 0, 0, 0.2);
+}
+
 #box-profile .img-profile {
   position: relative;
   display: inline-block;
@@ -147,10 +182,12 @@ section#box-profile {
 .description h1 {
   font-size: 32px;
   margin-bottom: 14px;
+  color: rgb(0, 0, 0);
 }
 
 .description p {
   color: #888888;
+  color: white;
 }
 
 .description .button {
@@ -164,6 +201,7 @@ section#box-profile {
   font-family: "Helvetica", sans-serif;
   top: 45px;
   margin-left: 30px;
+  color: white;
 }
 
 .information .data {
@@ -175,7 +213,7 @@ section#box-profile {
 .information p.field {
   font-weight: 600;
   width: 150px;
-  color: #333;
+  color: #000000;
 }
 
 .information .data p {
@@ -191,6 +229,15 @@ section#input-form {
   background-color: white;
   box-shadow: 0 0 7px 0 rgba(136, 146, 146, 0.2);
   padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
 }
 
 #input-form .form {

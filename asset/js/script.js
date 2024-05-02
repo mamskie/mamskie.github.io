@@ -21,7 +21,7 @@ function editForm() {
   document.getElementById("inpAvailability").value = available;
   document.getElementById("inpUsia").value = usia;
   document.getElementById("inpLokasi").value = lokasi;
-  document.getElementById("inpYears").value = experience;
+  document.getElementById("pExperience").value = experience;
   document.getElementById("inpEmail").value = email;
 }
 
@@ -31,7 +31,7 @@ function simpanForm() {
   var newAvailability = document.getElementById("inpAvailability").value;
   var newUsia = document.getElementById("inpUsia").value;
   var newLokasi = document.getElementById("inpLokasi").value;
-  var newExperience = document.getElementById("inpYears").value;
+  var newExperience = document.getElementById("pExperience").value;
   var newEmail = document.getElementById("inpEmail").value;
 
   document.getElementById("pName").innerHTML = newName;
